@@ -1,0 +1,7 @@
+[
+	{"id":1, "nome": "Borracha", "preco": 3.45},
+	{"id":2, "nome": "Caderno", "preco": 13.90},
+	{"id":3, "nome": "Kit de Lápis", "preco": 41.22},
+	{"id":4, "nome": "Caneta", "preco": 7.50},
+	{"id":5, "nome": "Livro Didático", "preco": 36.85}
+]
