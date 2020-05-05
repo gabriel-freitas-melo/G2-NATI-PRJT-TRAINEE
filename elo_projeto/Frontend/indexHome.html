@@ -1,0 +1,154 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleHome.css">
+    <title>Home Page</title>
+</head>
+<body><!--Título -->
+	<div class="header">
+		<h1>Halo API</h1>
+		<p>Maior site de APIs do Brasil!</p>
+	</div>
+	<!-- Menu de navegação - Topo-->
+	<div class="topnav">
+		<a href="indexHome.html">HOME</a>
+		<a href="#">DICAS</a>
+		<a href="#">DETONADO</a>
+		<a href="indexLogin.html" style="float: right;">SAIR</a><!--formatação inLine -->
+		
+	</div>
+	
+	<!--corpo da página -->
+	<div class="row">
+		<div class="leftcolumn">
+			<div class="card">
+				<h2>Halo 5 - Campaign Missions</h2>
+				<h5>February 21, 2017</h5>
+				<div>
+					
+					<img src="imagem/halo.png" alt="Halo 5 Campaign">
+					
+				</div>
+				<p> Descrição</p>
+				<p> Player and Match Statistics for Halo 5 Campaign Missions.
+					The campaign, Halo 5 also equips the player with a persistent
+					 fireteam of NPC Spartans, who are present at all times and can
+					  receive limited orders using the Xbox controller. 
+					  During cooperative play, other players assume control of 
+					  these Spartans; each Spartan has different gameplay attributes. </p>
+				
+<html>
+<head> <!-- aki entra o a API do halo 5-->
+    <title>JSSample</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+</head>
+<body>
+
+<script type="text/javascript">
+    $(function() {
+        var params = {
+            // Request parameters
+        };
+      
+        $.ajax({
+            url: "https://www.haloapi.com/metadata/h5/metadata/campaign-missions?" + $.param(params),
+            beforeSend: function(xhrObj){
+                // Request headers
+                xhrObj.setRequestHeader("Accept-Language","en");
+                xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","{subscription key}");
+            },
+            type: "GET",
+            // Request body
+            data: "{body}",
+        })
+        .done(function(data) {
+            alert("success");
+        })
+        .fail(function() {
+            alert("error");
+        });
+    });
+</script>
+</body>
+</html></p>
+			</div>
+			<div class="card">
+				<h2>Uma das APIs mais requisitadas</h2>
+				<h5> 14/01/2020</h5>
+				
+				<div >
+					<h3>Halo Wars 2</h3>
+					<img src="imagem/halowars2.png" alt="halo wars 2">
+					
+				</div>
+				<p> Descrição</p>
+				<p> Halo Wars 2 delivers real-time strategy at the speed of Halo combat.
+					 Get ready to lead armies of Spartans and other Halo fighting forces like Warthogs,
+					 Scorpions and exciting new units in a brutal war against a terrifying new enemy on 
+					 the biggest Halo battlefield yet.</p>
+					 <html> <!-- aki esta a api do halo wars2-->
+						<head>
+							<title>JSSample</title>
+							<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+						</head>
+						<body>
+						
+						<script type="text/javascript">
+							$(function() {
+								var params = {
+									// Request parameters
+									"startAt": "{number}",
+								};
+							  
+								$.ajax({
+									url: "https://www.haloapi.com/metadata/hw2/campaign-logs?" + $.param(params),
+									beforeSend: function(xhrObj){
+										// Request headers
+										xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","{subscription key}");
+									},
+									type: "GET",
+									// Request body
+									data: "{body}",
+								})
+								.done(function(data) {
+									alert("success");
+								})
+								.fail(function() {
+									alert("error");
+								});
+							});
+						</script>
+						</body>
+						</html>	 
+			</div>
+		</div>
+		<div class="rightcolumn">
+			<div class="card">
+				<h2>Sobre mim</h2>
+				<div class="fakeimg" style="height: 100px">imagem</div>
+				<p>Digite alguma coisa sobre voce</p>
+			</div>
+			<div class="card">
+				<div class="card"></div>
+				<h3>Post mais populares</h3>
+				<div class="fakeimg"></div>
+				<div class="fakeimg"></div>
+				<div class="fakeimg"></div>
+				
+			</div>
+			<div class="card">
+				<h3>siga-me</h3>
+				<p>alguma coisa...</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+			<h2>Halo advertisement</h2>
+	</div>
+	
+	
+</body>
+</html>

@@ -1,0 +1,100 @@
+/* Estilo da pagina principal*/
+*{ /* * é seletor universal*/
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 10px;
+	background-color: #0e93e0;
+	} 
+.header{
+		padding: 30px;
+		text-align: center;
+		background: white;
+	}
+.header h1 {
+		font-size: 50px;
+
+	}
+.topnav{
+		/*nao mostrar a barra de rolagem*/
+		overflow: hidden;
+		background-color: #333;
+
+	}
+.topnav a{
+		float: left;
+		display: block;
+		color: #f2f2f2;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	}
+
+.topnav a:hover{/*efeito de click no link*/
+	background-color: #0e93e1;
+	color:  black;
+	}
+.topnav input {
+	width: 100%;
+	padding: 12px 20px; 
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #0e93e1;
+	border-radius: 4px; /* borda suave*/
+	box-sizing: border-box;
+}
+
+
+.leftcolumn{
+	float: left;
+	width: 75%;
+
+}
+.rightcolumn{
+	float: right;
+	width: 25%;
+	background-color: #0e93e1;
+	padding-left:  20px;
+}
+.fakeimg{
+	background-color: #aaa;
+	width: 100%;
+	padding: 20px;
+
+}
+.card{
+	background-color: white;
+	padding: 20px;
+	margin-top: 20px; 
+}
+.footer{
+	padding: 20px;
+	text-align: center;
+	background: #ddd;
+	margin-top: 20px;
+}
+.row::after{
+	content: "";
+	display:  table;
+	clear: both;
+}
+/*EFEITO RESPONSÍVO: Quando a tela tem menos de 800px de largura faz as duas colunas
+ empilharem uma sobre a outra */
+@media(max-width: 800px){
+	.leftcolumn, .rightcolumn{
+		width: 100%;
+		padding: 0;
+
+	}
+}
+/*EFEITO RESPONSIVO Quando for menor do 400px faz o link de navegaçao se empilharem*/
+@media(max-width: 400px){
+	.topnav a{
+		float: none;
+		width: 100%;
+	}
+}
+
+

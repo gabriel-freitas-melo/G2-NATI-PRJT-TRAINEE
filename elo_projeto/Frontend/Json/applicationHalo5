@@ -1,0 +1,28 @@
+// A listing of campaign missions supported in the title. There is no significance to the
+// ordering.
+[
+  {
+    // The order of the mission in the story. The first mission is #1.
+    "missionNumber": "int",
+
+    // A localized name suitable for display.
+    "name": "string",
+
+    // A localized description, suitable for display to users.
+    "description": "string",
+
+    // An image that is used as the background art for this mission.
+    "imageUrl": "string",
+
+    // The team for the mission. One of the following values:
+    //   - BlueTeam
+    //   - OsirisTeam
+    "type": "string",
+
+    // The ID that uniquely identifies this campaign mission.
+    "id": "guid",
+
+    // Internal use only. Do not use.
+    "contentId": "guid"
+  }
+]

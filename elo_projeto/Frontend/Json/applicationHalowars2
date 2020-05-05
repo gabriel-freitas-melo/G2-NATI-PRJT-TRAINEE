@@ -1,0 +1,80 @@
+{
+  // Pagination information.
+  "Paging": {
+
+    // Index of the first item in this response in the collection of all available items
+    // of this type.
+    "StartAt": "int",
+
+    // Count of items returned in this response.
+    "InlineCount": "int",
+
+    // Count of all available items of this type.
+    "TotalCount": "int"
+  },
+
+  // Contents.
+  "ContentItems": [
+    {
+      // Internal use.
+      "Id": "int",
+
+      // Name of the content type.
+      "Type": "HW2Log",
+
+      // Contains the information for the content type.
+      "View": {
+
+        // Internal use.
+        "Status": "Published",
+
+        // Information common to all content types.
+        "Common": {
+
+          // Internal use.
+          "Owner": "string",
+
+          // Date the content was created. This is expressed as an ISO 8601 combined Date
+          // and Time.
+          "CreatedUtc": "string",
+
+          // Date the content was last modified. This is expressed as an ISO 8601
+          // combined Date and Time.
+          "ModifiedUtc": "string",
+
+          // Date the content was last published. This is expressed as an ISO 8601
+          // combined Date and Time.
+          "PublishedUtc": "string",
+
+          // Internal use.
+          "Container": "int"
+        },
+
+        // ID that identifies this content item in the Metadata API.
+        "Identity": "guid",
+
+        // Non-localized title of the content item.
+        "Title": "string",
+
+        // Information about the Campaign Log.
+        "HW2Log": {
+
+          // ID used by the Game and Stats API to identify this Campaign Log.
+          "Id": "int"
+        }
+      },
+
+      // Internal use.
+      "Links": [{
+        "Absolute": "bool",
+
+        "Relation": "string",
+
+        "URI": "string"
+      }],
+
+      // Internal use.
+      "ChildrenCount": "int"
+    }
+  ]
+}
